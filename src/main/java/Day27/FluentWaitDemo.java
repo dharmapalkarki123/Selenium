@@ -28,6 +28,7 @@ WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
 		
+		Wait<WebDriver> mywait = null;
 		WebElement textUsername = mywait.until(new Function<WebDriver, WebElement>(){
 			public WebElement apply(WebDriver driver ) {
 				return driver.findElement(By.xpath("//input[@placeholder='Username']"));
